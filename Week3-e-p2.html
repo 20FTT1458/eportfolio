@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+</head>
+<body>
+	<h1>Registration for Covid-19 volunteer - &reg; C19_Team</h1>
+	<form method="post" action="" enctype="multipart/form-data">
+	<table border="1" width="400" height="150" cellpadding="10">
+		<tr>
+			<td><label for="fullname">Full name</label></td><!-- do not use color name for coding -->
+
+			<td><input type="text" name="fulltname" id="fullname" pattern=".{10,}" maxlength="30"></td> <!-- the "for" has to be the same tag as the "id" -->
+	<!-- "." means any characters except new lines -->
+		</tr>
+		<tr>
+			<td><label for="email"> Email</label></td>
+			<td><input type="email" name="email" id="email"></td>
+		</tr>
+		<tr>
+			<td><label for="startdate"> Date you can start </label></td>
+			<td><input type="date" name="startdate" id="startdate"></td>
+		</tr>
+		<tr>
+			<td><label for="worktime"> Morning shift preference </label></td>
+			<td><input type="time" name="worktime" id="worktime"></td>
+		</tr>
+		<tr>
+			<td><label for="worktime"> Evening shift preference </label></td>
+			<td><input type="time" name="worktime" id="worktime"></td>
+		</tr>
+		<tr>
+		<td><label for="quantity">How many hours you can work? In multiple of 3</label></td>
+  		<td><input type="number" name="quantity" id="quantity" min="3" max="9"></td>
+		</tr>
+		<tr>
+			<td><label for="distance">Distance you're willing to commute to volunteer center?</label></td>
+			<td><input type="range" name="distance" id="range_distance" value="3" min="1" max="15" oninput="range_distance_disp.value = range_distance.value">
+   				<output  id="range_distance_disp"></output></td>
+		</tr>
+		<tr>
+			<td><label>Your currency preference for payment?</label></td>
+
+			<td>
+			<input type="radio" name="currency" id="pound"> <label for="pound">&pound;</label>
+			<input type="radio" name="currency" id="yen"><label for="yen">&yen;</label>
+			<input type="radio" name="currency" id="euro"><label for="euro">&euro;</label><!-- so that when tapping the text, it checked the box -->
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><textarea cols="40" rows="6" placeholder="Address"></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><p><del>You will be given daily meals</del></p></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="checkbox" name="terms"checked="" disabled=""> I agree to all terms and conditions <!-- so that the user cannot check the box --></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="submit" name="" value="Volunteer now!"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="submit" name="" value="Start over"></td>
+		</tr>
+	</table>
+	</form>
+	<!--HTML hr tag is used here-->
+	<hr>
+	<p>Denzel Washington once said...</p>
+
+	<blockquote>&ldquo;At the end of the day it’s not about what you have or even what you’ve accomplished… it’s about who you’ve lifted up, who you’ve made better. It’s about what you’ve given back.&rdquo;</blockquote>
+
+	<pre>So roses are red, violets are blue
+	It's all in my head, no matter what I do
+	So roses are red, violets are blue
+	It's all in my head, no matter what I do</pre>
+		
+
+</body>
+</html>
